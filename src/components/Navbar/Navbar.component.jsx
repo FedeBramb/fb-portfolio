@@ -34,7 +34,7 @@ const Navbar = () => {
               title="LinkedIn"
             />
           </a>
-          <a href="/CV.FedericoBrambilla.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/FB_FrontEndDev_2024.pdf" target="_blank" rel="noopener noreferrer">
             <img
               src="./SocialIcons/Resume-icon.svg"
               alt="Resume-icon"
