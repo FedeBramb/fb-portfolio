@@ -9,7 +9,7 @@ export const projects = [
       ],
       desc: `Un'applicazione web e-commerce moderna e intuitiva che offre varie tipologie di indumenti. 
       Tutti i dati sui prodotti e l'autenticazione degli utenti sono memorizzati nel nostro database Firebase.`,
-      demo: "https://profound-kringle-719cd9.netlify.app/",
+      demo: "https://crwn-clothing-wredux.netlify.app/",
       code: "https://github.com/FedeBramb/crwn-clothing.git",
       skills: ["React", "JavaScript", "SASS", "FireBase"],
       overview_sections: [
@@ -17,8 +17,7 @@ export const projects = [
           creando un'interfaccia utente interattiva. Ho utilizzato SCSS per lo stile, il che mi ha permesso di organizzare i miei fogli di 
           stile in modo più chiaro. Per gestire i dati e l'autenticazione degli utenti, ho integrato Firebase, che offre funzionalità pratiche 
           per registrare e accedere agli utenti. Questo ha reso facile creare una buona esperienza utente.
-          Infine, per gestire lo stato dell'app, ho scelto di usare il Context API di React, che mi ha aiutato a condividere i dati tra i 
-          componenti senza complicare troppo il codice..`
+          Infine, per gestire lo stato dell'app, ho scelto di usare Redux visto che ho già la versione con Context API.`
         },
         { title: 'Perchè ho svolto questo progetto', content: `Ho deciso di sviluppare un sito di e-commerce perché credo che rappresenti 
           un'opportunità unica per apprendere e approfondire nuove tecnologie e funzionalità offerte da React e JavaScript. Questo tipo di 
@@ -29,8 +28,9 @@ export const projects = [
         },
         { title: 'Difficoltà', content: `La gestione di Firebase è stata particolarmente impegnativa; pur essendo una tecnologia potente, 
           ho bisogno di affinare le mie competenze per utilizzarla al meglio. Un'altra difficoltà è stata garantire che i vari componenti 
-          comunichino in modo efficace tra di loro.` },
-        { title: 'Implementazioni future', content: ['Redux', 'Pagamenti', 'Profilo utente'] },
+          comunichino in modo efficace tra di loro. La difficoltà più importante è stato l'utilizzo della libreria Redux: c'è molto boilerplate
+          e mi servirà molta pratica per imparare bene il tutto.` },
+        { title: 'Implementazioni future', content: ['Pagamenti', 'Profilo utente'] },
       ]
     },
     {

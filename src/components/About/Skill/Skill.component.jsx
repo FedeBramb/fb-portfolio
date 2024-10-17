@@ -15,12 +15,10 @@ const SkillIcons = [
   { id: 10, src: '/SkillIcons/React-icon.svg', alt: 'React'},
   { id: 11, src: '/SkillIcons/Redux-icon.svg', alt: 'Redux'},
   { id: 12, src: '/SkillIcons/Javascript-icon.svg', alt: 'JavaScript'},
-  { id: 13, src: '/SkillIcons/Nextjs-icon.svg', alt: 'NextJS'},
-  { id: 14, src: '/SkillIcons/Vitejs-logo.svg', alt: 'ViteJS'},
-  { id: 15, src: '/SkillIcons/Framer-motion-icon.svg', alt: 'Framer Motion'},
-  { id: 16, src: '/SkillIcons/Node.js-icon.svg', alt: 'Node.JS'},
-  { id: 17, src: '/SkillIcons/Vitejs-logo.svg', alt: 'ViteJS'},
-  { id: 18, src: '/SkillIcons/GIMP-icon.png', alt: 'GIMP'},
+  { id: 13, src: '/SkillIcons/Vitejs-logo.svg', alt: 'ViteJS'},
+  { id: 14, src: '/SkillIcons/Framer-motion-icon.svg', alt: 'Framer Motion'},
+  { id: 15, src: '/SkillIcons/Node.js-icon.svg', alt: 'Node.JS'},
+  { id: 16, src: '/SkillIcons/GIMP-icon.png', alt: 'GIMP'},
 ]
 
 const Skill = () => {
