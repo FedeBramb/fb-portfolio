@@ -53,7 +53,8 @@ export const projects = [
       Creare un'interfaccia utente responsiva e intuitiva che funzionasse bene su dispositivi di diverse dimensioni è stata una sfida,
        ma ho imparato molto sulla progettazione UI/UX.
       Ho utilizzato Framer-motion per alcune animazioni e 
-      Il back-end è gestito con Knex e PostgreSQL, con i dati ospitati su Render.com.
+      Il back-end è gestito con Knex e PostgreSQL, con i dati ospitati su Render.com. Sul sito è possibile registrarsi con la possibilità di caricare un avatar
+      personalizzato, cercare una ricetta per nome o per ingrediente utilizzato, commentare le ricette.
       `},
         { title: 'Perchè ho svolto questo progetto', content: `Attraverso questo progetto, ho potuto esplorare diverse funzionalità 
         come la ricerca per ingredienti e la gestione dei commenti, che non solo migliorano l'esperienza dell'utente, ma richiedono 

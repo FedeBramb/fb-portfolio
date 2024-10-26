@@ -125,7 +125,7 @@ const Single = ({ project }) => {
                   Demo
                 </a>
                   <span className="tooltip-text">
-                    Aspettare qualche secondo per far sì che render.com carichi il Database, grazie!
+                    Aspettare qualche secondo per far si che render.com carichi il Database, grazie!
                   </span>
               </div>
               <a href={project.code} 
