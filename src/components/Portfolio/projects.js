@@ -3,7 +3,7 @@ export const projects = [
       id: 1,
       title: "Crown Shop",
       imgPreview: [
-        { id: '1a', url: "https://i.ibb.co/vskZHv1/crwn-screen-one.webp" },
+        { id: '1a', url: "https://i.ibb.co/S0YFd07/crwn-redux-first.webp" },
         { id: '1b', url: "https://i.ibb.co/4t4DzLW/capture-20240919162245880.webp" },
         { id: '1c', url: "https://i.ibb.co/hRpXZTB/crwn-screen-three.webp" },
       ],
@@ -30,7 +30,7 @@ export const projects = [
           ho bisogno di affinare le mie competenze per utilizzarla al meglio. Un'altra difficoltà è stata garantire che i vari componenti 
           comunichino in modo efficace tra di loro. La difficoltà più importante è stato l'utilizzo della libreria Redux: c'è molto boilerplate
           e mi servirà molta pratica per imparare bene il tutto.` },
-        { title: 'Implementazioni future', content: ['Pagamenti', 'Profilo utente'] },
+        { title: 'Implementazioni future', content: ['Profilo utente', 'Pannello di controllo utente'] },
       ]
     },
     {
