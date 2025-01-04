@@ -7,22 +7,22 @@ import './About.styles.scss';
 const About = () => {
   return (
     <div className='about-container'>
-        <h1>La Mia Esperienza</h1>
+        <h1>My Experience</h1>
         <div className='description'>
           <p>
-            Ciao! Mi chiamo Federico Brambilla e sono un front-end developer con passione per la creazione 
-            di esperienze web intuitive e coinvolgenti. Dopo molti anni di lavoro come cuoco professionista all'estero, 
-            ho deciso di seguire la mia vera passione: la tecnologia e la programmazione! Nel mio ruolo di cuoco, 
-            ho sviluppato competenze chiave come una forte etica del lavoro, l'attenzione ai dettagli, 
-            la gestione del tempo, la capacità di lavorare sotto pressione e la conoscenza di una seconda lingua. 
-            Queste abilità mi sono state estremamente utili nella mia transizione verso lo sviluppo web.
-            Ho dedicato molto tempo all'apprendimento delle tecnologie front-end come HTML, CSS, JavaScript e React. 
-            Troverai alcuni dei miei progetti nella sezione sottostante e altri qui sul mio profilo
-            <a href="https://github.com/FedeBramb" target="_blank"> GitHub</a>. Ho frequentato diversi corsi 
-            di Web Development su <a href="https://www.linkedin.com/company/zerotomastery/?originalSubdomain=ca" target="_blank">ZTM academy </a> 
-            e sto attualmente seguendo un corso specifico su React, che ha ulteriormente alimentato 
-            la mia passione per il front-end. Ho anche completato corsi ed esercizi su 
-            <a href="https://www.freecodecamp.org/LilBrumb" target="_blank"> FreeCodeCamp</a> e <a href="https://exercism.org/profiles/LilBrumb" target="_blank">Exercism</a>.
+            Hi! My name is Federico Brambilla, and I am a front-end developer with a passion for creating 
+            intuitive and engaging web experiences. After many years working as a professional chef abroad, 
+            I decided to follow my true passion: technology and programming! In my role as a chef, I 
+            developed key skills such as a strong work ethic, attention to detail, time management, 
+            the ability to work under pressure, and proficiency in a second language. 
+            These skills have been incredibly useful in my transition to web development.
+            I have dedicated a lot of time to learning front-end technologies like HTML, CSS, 
+            JavaScript, and React. You’ll find some of my projects in the section below, and more on my
+            <a href="https://github.com/FedeBramb" target="_blank"> GitHub</a> profile.  I have attended several Web Development courses 
+            at <a href="https://www.linkedin.com/company/zerotomastery/?originalSubdomain=ca" target="_blank">ZTM academy </a> 
+            and am currently taking a React-specific course, which has further fueled my passion for front-end development. 
+            I have also completed courses and exercises on
+            <a href="https://www.freecodecamp.org/LilBrumb" target="_blank"> FreeCodeCamp</a> and <a href="https://exercism.org/profiles/LilBrumb" target="_blank">Exercism</a>.
           </p>
         </div>
         <div className='skills-container'>

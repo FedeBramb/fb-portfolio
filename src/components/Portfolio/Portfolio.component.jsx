@@ -53,14 +53,14 @@ const Single = ({ project }) => {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </button>
-            <h2 className="overview_title">Panoramica progetto:</h2>
+            <h2 className="overview_title">Project overview:</h2>
             <div className="overview_container">
               {project.overview_sections.map((section, index) => (
                 <div key={index} className="overview_section">
                 <button
                   onClick={() => toggleSection(index)}
                   className="section-header"
-                  style={{backgroundColor: openSection === index ? "#ffb700" : "#0c0c1d"}}
+                  style={{backgroundColor: openSection === index ? "#00ffee" : "#0c0c1d"}}
                 >
                   <span 
                     style={{color: openSection === index ? "#0c0c1d" : "#d7d7d7"}}>
@@ -125,14 +125,14 @@ const Single = ({ project }) => {
                   Demo
                 </a>
                   <span className="tooltip-text">
-                    Aspettare qualche secondo per far si che render.com carichi il Database, grazie!
+                    Please wait a few seconds for the demo to load from render.com
                   </span>
               </div>
               <a href={project.code} 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="link-demo">
-                Codice
+                Code
               </a>
               <a href={project.link} 
                 target="_blank" 
@@ -140,7 +140,7 @@ const Single = ({ project }) => {
                 className="link-demo"
                 onClick={openModal}
               >
-                Descrizione
+                Description
               </a>
             </div>
           </motion.div>
@@ -173,7 +173,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1>Progetti</h1>
+        <h1>Projects</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
         {projects.map((project) => (

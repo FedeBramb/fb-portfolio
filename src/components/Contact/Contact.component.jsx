@@ -68,17 +68,17 @@ const Contact = () => {
       whileInView="animate"
     >
       <motion.div className="textContainer" variants={variants}>
-        <motion.h1 variants={variants}>Pronto a nuove sfide!</motion.h1>
+        <motion.h1 variants={variants}>Ready for new challenges!</motion.h1>
         <motion.div className="item" variants={variants}>
-          <h2>Mail</h2>
+          <h2>eMail</h2>
           <span>front.end.bramb@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Indirizzo</h2>
+          <h2>Address</h2>
           <span>Via al Mognago 7, Oggiono</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Telefono</h2>
+          <h2>Phone number</h2>
           <span>+39 347 3940354</span>
         </motion.div>
       </motion.div>
@@ -136,7 +136,7 @@ const Contact = () => {
             onBlur={() => setIsInputFocused(false)}
           />
           <textarea rows={8} placeholder="Message" name="message"/>
-          <button>Invia</button>
+          <button>Send</button>
           {error && "Errore durante l'invio"}
           {success && "Inviata!"}
         </motion.form>
