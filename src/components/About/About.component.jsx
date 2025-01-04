@@ -23,6 +23,7 @@ const About = () => {
             and am currently taking a React-specific course, which has further fueled my passion for front-end development. 
             I have also completed courses and exercises on
             <a href="https://www.freecodecamp.org/LilBrumb" target="_blank"> FreeCodeCamp</a> and <a href="https://exercism.org/profiles/LilBrumb" target="_blank">Exercism</a>.
+            You can take a look at my <a href="/FB_FrontEndDev_2024.pdf" target="_blank" rel="noopener noreferrer">CV</a>.
           </p>
         </div>
         <div className='skills-container'>
