@@ -33,8 +33,9 @@
         letter-spacing: 10px;
       }
 
-      h1 {
-        font-size: 80px;
+      p {
+        font-size: 65px;
+        font-weight: bold;
 
         @include mobile {
           font-size: 36px;
