@@ -1,20 +1,8 @@
-@keyframes blink {
-    0%, 100% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
+.line {
+    display: inline-block;
+    height: 65px; /* 5 units in Tailwind = 1.25rem */
+    width: 3px;
+    transform: translateY(0.25rem); /* translate-y-1 in Tailwind */
+    background-color: #d3d3d3; /* bg-slate-900 in Tailwind */
+    margin-left: 7px;
 }
-
-.cursor-blinker {
-    width: 2px;
-    background-color: rgb(255, 255, 255);
-    margin-left: 2px;
-}
-
-  
-.animate-blink {
-    animation: blink 1s step-end infinite;
-}
-  

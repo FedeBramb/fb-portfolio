@@ -20,7 +20,7 @@ const CaretCursor = () => {
     <motion.div
       variants={cursorVariants}
       animate="blinking"
-      className="cursor-blinker"
+      className="line"
     />
   );
 };
