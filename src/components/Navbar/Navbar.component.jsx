@@ -4,10 +4,10 @@ import Sidebar from "../Sidebar/Sidebar.component";
 import { motion } from "framer-motion";
 import "./Navbar.styles.scss";
 
-const Navbar = ({ disableSnap, enableSnap }) => {
+const Navbar = ({ toggleSnapAlign }) => {
   return (
     <div className="navbar-container">
-      <Sidebar disableSnap={disableSnap} enableSnap={enableSnap} />
+      <Sidebar toggleSnapAlign={toggleSnapAlign}  />
       <div className="wrapper">
         <motion.span
           initial={{ opacity: 0, scale: 0.5 }}

@@ -53,7 +53,7 @@
     }
 
     .phoneSvg {
-      stroke: #00ffee;
+      stroke: var(--text-color);
       position: absolute;
       margin: auto;
       z-index: -1;
@@ -68,8 +68,8 @@
       textarea {
         padding: 20px;
         background-color: transparent;
-        border: 1px solid white;
-        color: white;
+        border: 1px solid var(--white-color);
+        color: var(--white-color);
         border-radius: 5px;
 
         @include mobile {
@@ -80,7 +80,7 @@
       button {
         padding: 20px;
         border: none;
-        background-color: #00ffee;
+        background-color: var(--text-color);
         cursor: pointer;
         font-weight: 500;
         @include mobile {

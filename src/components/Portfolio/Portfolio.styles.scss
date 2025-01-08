@@ -8,7 +8,7 @@
     top: 0;
     left: 0;
     text-align: center;
-    color: #00ffee;
+    color: var(--text-color);
     font-size: 36px;
     padding-top: 20px;
     z-index: 40;
@@ -25,7 +25,7 @@
 
     .progressBar {
       height: 10px;
-      background-color: white;
+      background-color: var(--white-color);
     } 
   }
 
@@ -67,26 +67,26 @@
       border: none; /* Nessun bordo */
       cursor: pointer; /* Cambia il cursore in mano */
       font-size: 20px; /* Dimensione del testo */
-      color: white;
+      color: var(--white-color);
     }
     
     .overview_title {
       font-size: 1.5rem;
       font-weight: bold;
       padding-bottom: 0.5rem;
-      border-bottom: 1px solid white;
-      color: #00ffee;
+      border-bottom: 1px solid var(--white-color);
+      color: var(--text-color);
     }
 
     .overview_container {
       margin-top: 1rem;
-      border: 1px solid #00ffee;
+      border: 1px solid var(--text-color);
       border-radius: 0.5rem;
       overflow-y: auto;
     }
 
     .overview_section {
-      border-bottom: 1px solid #00ffee;
+      border-bottom: 1px solid var(--text-color);
       
       &:last-child {
         border-bottom: none;
@@ -108,7 +108,7 @@
       font-size: 1.2rem;
   
       &:hover {
-        background-color: #00ffee;
+        background-color: var(--text-color);
         color: #0c0c1d;
       }
     }
@@ -223,7 +223,7 @@
           height: 35px;
           padding: 5px;
           border-radius: 25% 13%;
-          border: 1px solid #00ffee;
+          border: 1px solid var(--text-color);
           color: rgb(255, 255, 255);
         }
 
@@ -271,8 +271,8 @@
           }
 
           .link-demo {
-            background-color: #00ffee;
-            box-shadow: 0 0 20px #00ffee;
+            background-color: var(--text-color);
+            box-shadow: 0 0 20px var(--text-color);
             border: none;
             border: 2px solid transparent;
             transition: 0.3s ease-in-out;
@@ -284,7 +284,7 @@
 
             &:hover {
               transform: scale(1.05);
-              box-shadow: 0 0 35px #00ffee;
+              box-shadow: 0 0 35px var(--text-color);
             }
           }
         }

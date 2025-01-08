@@ -6,7 +6,7 @@ import ToggleButton from './ToggleButton/ToggleButton.component.jsx';
 
 import './Sidebar.styles.scss';
 
-const Sidebar = ({ disableSnap, enableSnap }) => {
+const Sidebar = ({ toggleSnapAlign }) => {
     const [open, setOpen] = useState(false);
  
     const variants = {
@@ -36,7 +36,8 @@ const Sidebar = ({ disableSnap, enableSnap }) => {
         animate={open ? "open" : "closed"}
         >
           <motion.div className='bg' variants={variants}>
-            <Links disableSnap={disableSnap} enableSnap={enableSnap} />          </motion.div>
+            <Links toggleSnapAlign={toggleSnapAlign}  />          
+          </motion.div>
           <ToggleButton isOpen={open} setOpen={setOpen}/>
       </motion.div>
     </div>

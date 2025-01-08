@@ -29,7 +29,7 @@
 
       h2 {
         font-size: 30px;
-        color: #00ffee;
+        color: var(--text-color);
         letter-spacing: 10px;
       }
 
@@ -75,7 +75,7 @@
     font-size: 50vh;
     bottom: -120px;
     white-space: nowrap;
-    color: #ffffff09;
+    color: var(--sliding-text);
     width: 50%;
     font-weight: bold;
   }

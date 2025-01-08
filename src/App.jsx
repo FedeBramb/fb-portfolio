@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
 import Navbar from "./components/Navbar/Navbar.component.jsx";
@@ -11,32 +11,31 @@ import Contact from "./components/Contact/Contact.component.jsx";
 import "./App.scss";
 
 function App() {
-  const [snapType, setSnapType] = useState("y mandatory"); // Stato iniziale: snapping attivo
+  const [snapClass, setSnapClass] = useState("snap-start");
 
-  // Funzione per disabilitare temporaneamente lo snapping
-  // Altrimenti lo smooth-scroll interferirebbe con y-mandatory
-  const disableSnap = () => setSnapType("none");
-
-  // Funzione per riattivare lo snapping
-  const enableSnap = () => setSnapType("y mandatory");
+  // Alterna scroll-snap-align start/none evita interferenze con smooth-scroll
+  const toggleSnapAlign = () => {
+    setSnapClass("snap-none");
+    setTimeout(() => setSnapClass("snap-start"), 500);
+  }
 
   return (
-    <div style={{ scrollSnapType: snapType }}> {/* Applica lo stato dinamico */}
-      <section id="Homepage">
-        <Navbar disableSnap={disableSnap} enableSnap={enableSnap} />
+    <div> {/* Applica lo stato dinamico */}
+      <section id="Homepage" className={snapClass}>
+        <Navbar toggleSnapAlign={toggleSnapAlign} />
         <Hero />
       </section>
-      <section id="Services">
+      <section id="Services" className={snapClass}>
         <Parallax type="portfolio" />
       </section>
-      <section id="About">
+      <section id="About" className={snapClass}>
         <About />
       </section>
-      <section id="Portfolio">
+      <section id="Portfolio" className={snapClass}>
         <Parallax type="services" />
       </section>
         <Portfolio />
-      <section id="Contatti">
+      <section id="Contatti" className={snapClass}>
         <Contact />
       </section>
     </div>
