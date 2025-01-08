@@ -1,13 +1,13 @@
 import React from "react";
 import Sidebar from "../Sidebar/Sidebar.component";
-
+import { Link } from "react-scroll"; // Importa react-scroll
 import { motion } from "framer-motion";
 import "./Navbar.styles.scss";
 
-const Navbar = ({ disableSnap, enableSnap }) => {
+const Navbar = () => {
   return (
     <div className="navbar-container">
-      <Sidebar disableSnap={disableSnap} enableSnap={enableSnap} />
+      <Sidebar />
       <div className="wrapper">
         <motion.span
           initial={{ opacity: 0, scale: 0.5 }}
@@ -16,6 +16,36 @@ const Navbar = ({ disableSnap, enableSnap }) => {
         >
           Federico Brambilla
         </motion.span>
+        <div className="navigation">
+          {/* Collegamenti con smooth scrolling */}
+          <ul>
+            <li>
+              <Link to="Homepage" smooth={true} duration={500}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="Services" smooth={true} duration={500}>
+                Servizi
+              </Link>
+            </li>
+            <li>
+              <Link to="About" smooth={true} duration={500}>
+                Chi Siamo
+              </Link>
+            </li>
+            <li>
+              <Link to="Portfolio" smooth={true} duration={500}>
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link to="Contatti" smooth={true} duration={500}>
+                Contatti
+              </Link>
+            </li>
+          </ul>
+        </div>
         <div className="social">
           <a href="https://github.com/FedeBramb" target="_blank">
             <img

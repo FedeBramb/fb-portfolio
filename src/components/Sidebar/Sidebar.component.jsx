@@ -6,7 +6,7 @@ import ToggleButton from './ToggleButton/ToggleButton.component.jsx';
 
 import './Sidebar.styles.scss';
 
-const Sidebar = () => {
+const Sidebar = ({ disableSnap, enableSnap }) => {
     const [open, setOpen] = useState(false);
  
     const variants = {
@@ -30,14 +30,13 @@ const Sidebar = () => {
   return (
     // Motion avviene anche per gli elementi figli
     // Variants di animazione che un componente può avere
-    <div className='yuppi'>
+    <div>
       <motion.div 
         className='sidebar-container'
         animate={open ? "open" : "closed"}
         >
           <motion.div className='bg' variants={variants}>
-              <Links />
-          </motion.div>
+            <Links disableSnap={disableSnap} enableSnap={enableSnap} />          </motion.div>
           <ToggleButton isOpen={open} setOpen={setOpen}/>
       </motion.div>
     </div>

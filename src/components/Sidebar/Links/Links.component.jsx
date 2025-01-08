@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
+import { Link } from "react-scroll"; // Importa react-scroll
 
-
-// Quando il contenitore è aperto, l'animazione dei figli è scaglionata di 0.1 secondi.
-// Quando il contenitore è chiuso, l'animazione dei figli è scaglionata di 0.05 secondi e in direzione inversa
+// Variants per le animazioni del contenitore
 const variants = {
   open: {
     transition: {
@@ -17,9 +16,7 @@ const variants = {
   },
 };
 
-// Definisce le animazioni per ogni elemento figlio (motion.a)
-// open: Gli elementi sono nella loro posizione originale e completamente visibili
-// closed: Gli elementi sono spostati di 50 pixel verso il basso e invisibili
+// Variants per le animazioni di ogni link
 const itemVariants = {
   open: {
     y: 0,
@@ -31,21 +28,28 @@ const itemVariants = {
   },
 };
 
-const Links = () => {
-  const items = ["Homepage", "Portfolio", "Contatti", "About"];
+const Links = ({ disableSnap, enableSnap }) => {
+  const items = ["Homepage", "Portfolio", "Contatti", "About"]; // Gli ID delle sezioni
 
   return (
     <motion.div className="links" variants={variants}>
       {items.map((item) => (
-        <motion.a
-          href={`#${item}`}
+        <motion.div
           key={item}
           variants={itemVariants}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
         >
-          {item}
-        </motion.a>
+          <Link
+            to={item} // Nome dell'ID della sezione
+            smooth={true} // Abilita lo scrolling fluido
+            duration={500} // Durata dello scrolling in millisecondi
+            onClick={disableSnap} // Disabilita lo snap al click
+            onSetActive={enableSnap} // Riabilita lo snap quando la sezione è attiva
+          >
+            {item}
+          </Link>
+        </motion.div>
       ))}
     </motion.div>
   );
