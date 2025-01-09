@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
 import "./Portfolio.styles.scss";
 
 // Progetto 
-const Single = ({ project }) => {
+const Single = ({ project, snapClass }) => {
   const [isOpenWindow, setIsOpenWindow] = useState(false);
   const [openSection, setOpenSection] = useState(null);
 
@@ -32,7 +32,7 @@ const Single = ({ project }) => {
   const y = useTransform(scrollYProgress, [0, 1], [-300, 210]);
 
   return (
-    <section >
+    <section className={snapClass} >
       {isOpenWindow && 
         <>
           <div className="overlay-blur"></div>
@@ -152,7 +152,7 @@ const Single = ({ project }) => {
 
 
 // Raccolta dei progetti
-const Portfolio = () => {
+const Portfolio = ({ snapClass }) => {
   const ref = useRef();
     // index 0 elemento, index 1 view
     // start = bordo superiore end = bordo inferiore
@@ -177,7 +177,7 @@ const Portfolio = () => {
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
         {projects.map((project) => (
-          <Single project={project} key={project.id} />
+          <Single project={project} snapClass={snapClass} key={project.id} />
         ))}
     </div>
   );

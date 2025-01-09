@@ -28,7 +28,7 @@ const itemVariants = {
   },
 };
 
-const Links = ({ disableSnap, enableSnap }) => {
+const Links = ({ toggleSnapAlign }) => {
   const items = ["Homepage", "Portfolio", "Contatti", "About"]; // Gli ID delle sezioni
 
   return (
@@ -44,8 +44,7 @@ const Links = ({ disableSnap, enableSnap }) => {
             to={item} // Nome dell'ID della sezione
             smooth={true} // Abilita lo scrolling fluido
             duration={500} // Durata dello scrolling in millisecondi
-            onClick={disableSnap} // Disabilita lo snap al click
-            onSetActive={enableSnap} // Riabilita lo snap quando la sezione è attiva
+            onClick={toggleSnapAlign} // Disabilita lo snap al click
           >
             {item}
           </Link>

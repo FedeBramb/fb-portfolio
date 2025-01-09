@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+
 
 import Navbar from "./components/Navbar/Navbar.component.jsx";
 import Hero from "./components/Hero/Hero.component.jsx";
@@ -16,8 +16,12 @@ function App() {
   // Alterna scroll-snap-align start/none evita interferenze con smooth-scroll
   const toggleSnapAlign = () => {
     setSnapClass("snap-none");
-    setTimeout(() => setSnapClass("snap-start"), 500);
+    setTimeout(() => setSnapClass("snap-start"), 1000);
   }
+
+  useEffect(() => {
+    console.log(snapClass);
+  }, [snapClass]);
 
   return (
     <div> {/* Applica lo stato dinamico */}
@@ -34,7 +38,7 @@ function App() {
       <section id="Portfolio" className={snapClass}>
         <Parallax type="services" />
       </section>
-        <Portfolio />
+        <Portfolio snapClass={snapClass} />
       <section id="Contatti" className={snapClass}>
         <Contact />
       </section>

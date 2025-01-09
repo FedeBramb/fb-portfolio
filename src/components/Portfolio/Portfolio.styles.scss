@@ -29,6 +29,12 @@
     } 
   }
 
+  section {
+    .snap-start {
+      scroll-snap-align: start;
+    }
+  }
+
   .overlay-blur {
     position: fixed;
     top: 0;
