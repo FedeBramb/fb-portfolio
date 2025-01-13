@@ -9,7 +9,7 @@ export const projects = [
       ],
       desc: `A modern and intuitive e-commerce web application offering various types of clothing. All product data and user authentication are stored in our Firebase database.`,
       demo: "https://crwn-clothing-wredux.netlify.app/",
-      code: "https://github.com/FedeBramb/crwn-clothing.git",
+      code: "https://github.com/FedeBramb/crwn-clothing-v2.0-Redux",
       skills: ["React", "JavaScript", "SCSS", "FireBase"],
       overview_sections: [
         { title: 'Description', content: `For my e-commerce project, I used React and JavaScript to build 

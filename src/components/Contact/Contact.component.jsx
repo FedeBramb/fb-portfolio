@@ -27,8 +27,8 @@ const Contact = () => {
   const [success, setSuccess] = useState(false);
   const [isInputFocused, setIsInputFocused] = useState(false);
 
-  // Togliamo scrollSnapType quando siamo in focus sugli input
-  //  evitiamo problemi sugli input in focus su mobile.
+  // Disattiva scrollSnapType quando gli inputs sono in focus,
+  //  evitiamo problemi su mobile.
   useEffect(() => {
       if (isInputFocused) {
           document.documentElement.style.scrollSnapType = 'none';

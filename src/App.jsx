@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-
 import Navbar from "./components/Navbar/Navbar.component.jsx";
 import Hero from "./components/Hero/Hero.component.jsx";
 import Parallax from "./components/Parallax/Parallax.component.jsx";
@@ -24,7 +23,7 @@ function App() {
   }, [snapClass]);
 
   return (
-    <div> {/* Applica lo stato dinamico */}
+    <div> 
       <section id="Homepage" className={snapClass}>
         <Navbar toggleSnapAlign={toggleSnapAlign} />
         <Hero />
