@@ -43,7 +43,7 @@ const Links = ({ toggleSnapAlign }) => {
           <Link
             to={item} // Nome dell'ID della sezione
             smooth={true} // Abilita lo scrolling fluido
-            duration={500} // Durata dello scrolling in millisecondi
+            duration={700} // Durata dello scrolling in millisecondi
             onClick={toggleSnapAlign} // Disabilita lo snap al click
           >
             {item}

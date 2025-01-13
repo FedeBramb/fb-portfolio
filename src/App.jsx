@@ -15,7 +15,7 @@ function App() {
   // Alterna scroll-snap-align start/none evita interferenze con smooth-scroll
   const toggleSnapAlign = () => {
     setSnapClass("snap-none");
-    setTimeout(() => setSnapClass("snap-start"), 1000);
+    setTimeout(() => setSnapClass("snap-start"), 1500);
   }
 
   useEffect(() => {

@@ -17,8 +17,17 @@ const Single = ({ project, snapClass }) => {
 
   const ref = useRef(null);
 
-  const openModal = () => setIsOpenWindow(true);
-  const closeModal = () => setIsOpenWindow(false);
+  // Disabilita lo scroll del body
+  const openModal = () => {
+    document.body.style.overflowY = "hidden"; 
+    setIsOpenWindow(true);
+  };
+  
+  // Riabilita lo scroll del body
+  const closeModal = () => {
+    document.body.style.overflowY = "auto"; 
+    setIsOpenWindow(false);
+  };
 
   const toggleSection = (index) => {
     setOpenSection(openSection === index ? null : index)
