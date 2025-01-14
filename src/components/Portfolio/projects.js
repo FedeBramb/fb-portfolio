@@ -10,7 +10,7 @@ export const projects = [
       desc: `A modern and intuitive e-commerce web application offering various types of clothing. All product data and user authentication are stored in our Firebase database.`,
       demo: "https://crwn-clothing-wredux.netlify.app/",
       code: "https://github.com/FedeBramb/crwn-clothing-v2.0-Redux",
-      skills: ["React", "JavaScript", "SCSS", "FireBase"],
+      skills: ["React", "JavaScript", "SCSS", "FireBase", "Redux", "Styled-Components", "Stripe API", "React-Router-Dom"],
       overview_sections: [
         { title: 'Description', content: `For my e-commerce project, I used React and JavaScript to build 
           the front end, creating an interactive user interface. 
@@ -50,7 +50,7 @@ export const projects = [
       ingredient, the ability to add comments, and a carousel to display recipe images.`,
       demo: "https://food-blog-tlsm.onrender.com",
       code: "https://github.com/FedeBramb/food-blog.git",
-      skills: ["JavaScript", "React", "SASS", "PostgreSQL"],
+      skills: ["JavaScript", "React", "SASS", "PostgreSQL", "Knex", "Styled-Components", "Framer-Motion"],
       overview_sections: [
           { title: 'Description', content: `
       Initially, the blog's style was defined using CSS and SASS, but I eventually opted for 
