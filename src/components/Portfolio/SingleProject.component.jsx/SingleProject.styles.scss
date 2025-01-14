@@ -1,0 +1,272 @@
+@import '../../../App.scss';
+
+section {
+    .snap-start {
+      scroll-snap-align: center;
+    }
+}
+
+.overlay-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+}
+
+.modal {
+    position: fixed;
+    padding: 30px;
+    width: 750px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0c0c1d;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    overflow-y: auto;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+
+    @include mobile {
+      width: 330px;
+      padding: 10px;
+    }
+    
+    .close-button{
+      position: absolute; /* Posizione assoluta rispetto alla modale */
+      top: 22px; /* Distanza dal top */
+      right: 10px; /* Distanza dal bordo destro */
+      background: none; /* Nessuno sfondo */
+      border: none; /* Nessun bordo */
+      cursor: pointer; /* Cambia il cursore in mano */
+      font-size: 20px; /* Dimensione del testo */
+      color: var(--white-color);
+    }
+    
+    .overview_title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--white-color);
+      color: var(--text-color);
+    }
+
+    .overview_container {
+      margin-top: 1rem;
+      border: 1px solid var(--text-color);
+      border-radius: 0.5rem;
+      overflow-y: auto;
+    }
+
+    .overview_section {
+      border-bottom: 1px solid var(--text-color);
+      
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .section-header {
+      width: 100%;
+      text-align: left;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: rgb(212, 212, 212);
+      transition: background-color 0.15s ease-in-out;
+      cursor: pointer;
+      font-weight: 500;
+      border: none;
+      font-size: 1.2rem;
+  
+      &:hover {
+        background-color: var(--text-color);
+        color: #0c0c1d;
+      }
+    }
+
+    .section_icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    .section-content {
+      padding: 1rem;
+    
+      overflow-y: auto;
+      max-height: 200px;
+      
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 10;
+
+    .wrapper {
+      max-width: 1366px;
+      height: 100%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      padding: 50px;
+
+      @include mobile {
+        flex-direction: column;
+        gap: 0;
+      }
+
+      .mySwiper {
+        max-width: 650px;
+        max-height: 430px;
+        height: auto;
+        margin-top: 70px;
+        cursor: pointer;
+        border-radius: 10px;
+
+        @include mobile {
+         margin-top: 0;
+         width: 50%;
+        }
+
+        .swiper-slide {
+          text-align: center;
+          background: #fff;
+          
+          img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            
+            @include mobile {              
+              height: 100%;
+            }
+          }
+        }
+      }
+
+      .textContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @include mobile {
+          transform: none !important;
+          padding: 10px;
+          align-items: center;
+          text-align: center;
+          max-width: 350px;
+        }
+
+        h2 {
+          font-size: 65px;
+          text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+
+          @include mobile {
+            font-size: 36px;
+          }
+        }
+
+        .skills {
+          list-style-type: none;
+          display: flex;
+          flex-wrap: wrap; /* Permette di avvolgere le icone su più righe */
+          justify-content: flex-start;
+          gap: 20px;
+        
+          @include mobile {
+            justify-content: center; /* Centra le icone su schermi piccoli */
+            gap: 10px; /* Riduce il gap per schermi piccoli */
+          }
+        }
+        
+        .skill {
+          background-color: transparent;
+          height: 35px;
+          padding: 5px;
+          border-radius: 25% 13%;
+          border: 1px solid var(--text-color);
+          color: rgb(255, 255, 255);
+        }
+
+        p {
+          color: rgb(187, 187, 187);
+          font-size: 20px;
+
+          @include mobile {
+            font-size: 16px;
+          }
+        }
+
+        .buttons-container {
+          display: flex;
+          flex-wrap: wrap; /* Permette di avvolgere le icone su più righe */
+          justify-content: flex-start;
+          gap: 20px;
+
+          .tooltip-container {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            .tooltip-text {
+              visibility: hidden;
+              width: 140px;
+              background-color: rgb(255, 255, 255);
+              color: #000000;
+              text-align: center;
+              border-radius: 5px;
+              padding: 5px;
+              position: absolute;
+              z-index: 1;
+              bottom: 125%;
+              left: 50%;
+              transform: translateX(-50%);
+              opacity: 0;
+              transition: opacity 0.3s;
+            }
+            
+            &:hover .tooltip-text {
+              visibility: visible;
+              opacity: 1;
+            }
+          }
+
+          .link-demo {
+            background-color: var(--text-color);
+            box-shadow: 0 0 20px var(--text-color);
+            border: none;
+            border: 2px solid transparent;
+            transition: 0.3s ease-in-out;
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+            color: rgb(60, 60, 60);
+            text-align: center;
+
+            &:hover {
+              transform: scale(1.05);
+              box-shadow: 0 0 35px var(--text-color);
+            }
+          }
+        }
+      }
+    }
+  }
