@@ -34,11 +34,14 @@ const Sidebar = ({ toggleSnapAlign }) => {
       <motion.div 
         className='sidebar-container'
         animate={open ? "open" : "closed"}
+        onAnimationComplete={() => {
+          if (!open) toggleSnapAlign(); // Sincronizza con la fine dell'animazione
+        }}
         >
           <motion.div className='bg' variants={variants}>
-            <Links toggleSnapAlign={toggleSnapAlign}  />          
+            <Links toggleSnapAlign={toggleSnapAlign} setOpen={setOpen} />          
           </motion.div>
-          <ToggleButton isOpen={open} setOpen={setOpen}/>
+          <ToggleButton isOpen={open} setOpen={setOpen} />
       </motion.div>
     </div>
   )

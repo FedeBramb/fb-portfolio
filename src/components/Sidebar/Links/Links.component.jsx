@@ -28,7 +28,7 @@ const itemVariants = {
   },
 };
 
-const Links = ({ toggleSnapAlign }) => {
+const Links = ({ toggleSnapAlign, setOpen }) => {
   const items = ["Homepage", "Portfolio", "Contatti", "About"]; // Gli ID delle sezioni
 
   return (
@@ -45,6 +45,8 @@ const Links = ({ toggleSnapAlign }) => {
             smooth={true} // Abilita lo scrolling fluido
             duration={700} // Durata dello scrolling in millisecondi
             onClick={toggleSnapAlign} // Disabilita lo snap al click
+            onSetActive={() => setOpen(false)} // Chiude la sidebar al click
+            spy={true} // Aggiorna l'elemento attivo durante lo scrolling
           >
             {item}
           </Link>
