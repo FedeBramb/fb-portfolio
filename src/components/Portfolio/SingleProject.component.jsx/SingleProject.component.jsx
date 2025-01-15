@@ -62,29 +62,29 @@ const SingleProject = ({ project, snapClass }) => {
                     <div className="overview_container">
                         {project.overview_sections.map((section, index) => (
                         <div key={index} className="overview_section">
-                        <button
-                            onClick={() => toggleSection(index)}
-                            className="section-header"
-                            style={{backgroundColor: openSection === index ? "#00ffee" : "#0c0c1d"}}
-                        >
-                            <span 
-                            style={{color: openSection === index ? "#0c0c1d" : "#d7d7d7"}}>
-                            {section.title}
-                            </span>
-                            <img
-                            src={openSection === index 
-                                ? "https://icongr.am/fontawesome/chevron-up.svg?size=20&color=0c0c1d"
-                                : "https://icongr.am/fontawesome/chevron-down.svg?size=20&color=fcfcfc"}
-                            alt={openSection === index ? "Chiudi sezione" : "Apri sezione"}
-                            className="section_icon"
-                            />
-                        </button>
-                        {openSection === index && (
-                            <div className="section-content">
-                            { (Array.isArray(section.content)) ? section.content.map(content => (<li key={index}>{content}</li>)) : <p>{section.content}</p>}
+                            <button
+                                onClick={() => toggleSection(index)}
+                                className="section-header"
+                                style={{backgroundColor: openSection === index ? "#00ffee" : "#0c0c1d"}}
+                            >
+                                <span 
+                                    style={{color: openSection === index ? "#0c0c1d" : "#d7d7d7"}}>
+                                    {section.title}
+                                </span>
+                                <img
+                                    src={openSection === index 
+                                        ? "https://icongr.am/fontawesome/chevron-up.svg?size=20&color=0c0c1d"
+                                        : "https://icongr.am/fontawesome/chevron-down.svg?size=20&color=fcfcfc"}
+                                    alt={openSection === index ? "Chiudi sezione" : "Apri sezione"}
+                                    className="section_icon"
+                                />
+                            </button>
+                            {openSection === index && (
+                                <div className="section-content">
+                                    { (Array.isArray(section.content)) ? section.content.map(content => (<li key={index}>{content}</li>)) : <p>{section.content}</p>}
+                                </div>
+                            )}
                             </div>
-                        )}
-                        </div>
                         ))}
                     </div>
                 </div>

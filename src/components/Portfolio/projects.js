@@ -3,7 +3,7 @@ export const projects = [
       id: 1,
       title: "Crown Shop",
       imgPreview: [
-        { id: '1a', url: "https://i.ibb.co/S0YFd07/crwn-redux-first.webp" },
+        { id: '1a', url: "https://i.ibb.co/M8Z9S5Y/Crown-shop-preview.webp" },
         { id: '1b', url: "https://i.ibb.co/4t4DzLW/capture-20240919162245880.webp" },
         { id: '1c', url: "https://i.ibb.co/hRpXZTB/crwn-screen-three.webp" },
       ],
