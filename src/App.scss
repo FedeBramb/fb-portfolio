@@ -38,7 +38,7 @@ body {
   color: lightgray;
   position: relative;
   overflow-x: hidden;
-  // scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
 }
 
 a {
@@ -54,13 +54,13 @@ section {
   position: relative;
   transition: transform 0.6s ease-in-out; /* Transizione fluida */
   
-  // &.snap-start {
-  //   scroll-snap-align: center;
-  // }
+  &.snap-start {
+    scroll-snap-align: center;
+  }
 
-  // &.snap-none {
-  //   scroll-snap-align: none;
-  // }
+  &.snap-none {
+    scroll-snap-align: none;
+  }
 
   @media (max-width: 738px) {
     overflow-y: auto;
