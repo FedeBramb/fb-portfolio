@@ -1,3 +1,5 @@
+@import "../../../App.scss";
+
 .line {
     display: inline-block;
     height: 65px; 
@@ -5,4 +7,8 @@
     transform: translateY(0.25rem); 
     background-color: #d3d3d3;
     margin-left: 7px;
+
+    @include mobile {
+        height: 36px;
+    }
 }

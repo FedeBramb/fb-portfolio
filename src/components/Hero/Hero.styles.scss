@@ -16,6 +16,11 @@
       justify-content: center;
     }
 
+    @include tablet {
+      display: flex;
+      justify-content: center;
+    }
+
     .textContainer {
       width: 51%;
       height: 100%;
@@ -30,6 +35,10 @@
         gap: 20px;
         align-items: center;
         text-align: center;
+      }
+
+      @include tablet {
+        justify-content: flex-start;
       }
 
       h2 {
@@ -49,7 +58,6 @@
 
       img {
         width: 50px;
-        
       }
     }
   }
@@ -62,6 +70,13 @@
     margin: auto;
 
     @include mobile {
+      height: 50%;
+      width: 100%;
+      top: unset;
+      bottom: 0;
+    }
+
+    @include tablet {
       height: 50%;
       width: 100%;
       top: unset;
