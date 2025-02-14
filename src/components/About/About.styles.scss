@@ -10,6 +10,14 @@
     gap: 30px;
     font-size: 20px;
     font-size: clamp(14px, 2vw, 20px);
+
+    @include tablet {
+        font-size: 30px;
+    }
+
+    @include mobile {
+        font-size: 14px;
+    }
     
     h1 {
         color: var(--text-color);
@@ -36,8 +44,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        max-height: 500px;
-        max-width: 600px;
+        
         gap: 10px;
         margin: auto;
     }

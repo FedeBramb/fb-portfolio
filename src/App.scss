@@ -18,6 +18,12 @@ html {
   font-family: "DM Sans", sans-serif;
 }
 
+@media (max-width: 1024px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 /* Scrollbar per WebKit-based browsers (Chrome, Safari, Edge) */
 *::-webkit-scrollbar {
   width: 12px; /* Larghezza della scrollbar */

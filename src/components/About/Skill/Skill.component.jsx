@@ -26,7 +26,7 @@ const Skill = () => {
     <>
       {SkillIcons.map(({ id, src, alt }) => (
         <div key={id} className='skill-container'>
-          <img src={src} alt={alt} loading="lazy" width="50" height="50" decoding="async"/>
+          <img src={src} alt={alt} loading="lazy" decoding="async"/>
           <span>{alt}</span>
         </div>
       ))}
