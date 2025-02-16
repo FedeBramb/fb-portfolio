@@ -18,7 +18,9 @@ const SkillIcons = [
   { id: 13, src: '/SkillIcons/Vitejs-logo.svg', alt: 'ViteJS'},
   { id: 14, src: '/SkillIcons/Framer-motion-icon.svg', alt: 'Framer Motion'},
   { id: 15, src: '/SkillIcons/Node.js-icon.svg', alt: 'Node.JS'},
-  { id: 16, src: '/SkillIcons/GIMP-icon.png', alt: 'GIMP'},
+  { id: 16, src: '/SkillIcons/Nextjs-icon.svg', alt: 'Next.js'},
+  { id: 17, src: '/SkillIcons/Tailwind_icon.png', alt: 'Tailwind'},
+  { id: 18, src: '/SkillIcons/GIMP-icon.png', alt: 'GIMP'},
 ]
 
 const Skill = () => {
